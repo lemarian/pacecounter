@@ -7,8 +7,8 @@ require('config/db.php');
 
 	// print_r($_REQUEST);
 	 
-	 $user=$_REQUEST['username'];
-	 $password=$_REQUEST['password'];
+	 $user=mysql_real_escape_string($_REQUEST['username']);
+	 $password=mysql_real_escape_string($_REQUEST['password']);
 
 	 //echo($user . " " .  $password  );
 	 

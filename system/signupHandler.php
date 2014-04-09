@@ -7,11 +7,11 @@ include_once('config/db.php');
 	
 	// print_r($_REQUEST);
 	 
-	 $user=$_REQUEST['username'];
+	 $user=mysql_real_escape_string($_REQUEST['username']);
 	 //echo($user);
-	 $email=$_REQUEST['email'];
-	 $password=$_REQUEST['password'];
-	 $confirmPassword=$_REQUEST['confirm_password'];
+	 $email=mysql_real_escape_string($_REQUEST['email']);
+	 $password=mysql_real_escape_string($_REQUEST['password']);
+	 $confirmPassword=mysql_real_escape_string($_REQUEST['confirm_password']);
 	 //echo($user . " " . $email . " " .  $password . " " . $confirmPassword );
 	 
 	 
