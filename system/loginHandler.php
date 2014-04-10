@@ -7,8 +7,10 @@ require('config/db.php');
 
 	// print_r($_REQUEST);
 	 
+
 	 $user=$_REQUEST['uname'];
 	 $password=$_REQUEST['upass'];
+
 
 	 //echo($user . " " .  $password  );
 	 

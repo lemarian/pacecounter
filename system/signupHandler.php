@@ -7,11 +7,13 @@ include_once('config/db.php');
 	
 	// print_r($_REQUEST);
 	 
+
 	 $user=$_REQUEST['uname'];
 	 //echo($user);
 	 $email=$_REQUEST['uemail'];
 	 $password=$_REQUEST['upass'];
 	 $confirmPassword=$_REQUEST['confirm_password'];
+
 	 //echo($user . " " . $email . " " .  $password . " " . $confirmPassword );
 	 
 	  echo('<link rel="stylesheet" type="text/css" href="../theme/css/style.css" />');
