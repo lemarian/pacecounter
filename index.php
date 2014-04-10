@@ -6,7 +6,6 @@ session_start();
 //check if logged
 if (isset($_SESSION['user']))
 {
-echo "Welcome " . $_SESSION['user'] ."<a href='logout.php'>Logout</a>";
 //Isha Do your work here
 
 
@@ -40,10 +39,25 @@ Welcome - Pace Counter
 
 <head>
 <body>
+	<div class='container indexPage'>
+
+
+
+		 <div class='logo-wrapper'>
+        <div class="logo-icon">P</div>
+        <div class='logo-text'>Pace <strong>Counter</strong></div>
+
+    </div>
+
+
+    <div class='user-info'>
+
+    	<h2 class='welcome'>Welcome <strong><?php echo $_SESSION['user'] ?></strong></h2> <a class='pc-link' href='logout.php'>Logout</a>
+    </div>
 <div class='create-schedule'>
 <form method="post" action="system/scheduleHandler.php">
-<input type="text" name='newSchedule'/>
-<input type="submit" value='Create' />
+<input type="text" name='newSchedule'class='new-schedule' placeholder='create new milestone'/>
+<input type="submit" class='btn red' value='Create' />
 </form>
 
 </div>
@@ -61,22 +75,23 @@ while($data=mysql_fetch_assoc($res))
 $content = $data['content'];
 ?>
 
-	<li>
+	<li class='pc-box'>
 		<?php// print_r (getdate(time())); ?>
 		<?php//  echo $data['timestamp']?>
 	<span class='schedule-list'></span>
 	<h2><?php echo $content ?> </h2>
+<div class='list-btn'>	
 	<form class='addCount' methzod='post' action='system/addEventCount.php' >
 		<input type='hidden' name='sid' value='<?php echo $data["sid"]?>'>
-		<input type='submit' value = '<?php echo ($data["count"])?$data["count"]:"0"?>'>
+		<input type='submit' class='btn' value = '<?php echo ($data["count"])?$data["count"]:"0"?>'>
 	</form>
 
 	<form class='deleteIt' method='post' action='system/deleteSch.php' >
 		<input type='hidden' name='sid' value='<?php echo $data["sid"]?>'>
-		<input type='submit' value = 'x'>
+		<input type='submit' class='btn' value = 'x'>
 	</form>
 
-
+</div>
 	</li>
 
 	
@@ -85,8 +100,8 @@ $content = $data['content'];
 }
 ?>
 
-</ul>;	
-
+</ul>
+</div>
 
 </body>
 

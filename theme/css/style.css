@@ -1,9 +1,14 @@
-body{background:#F8F8F8; font-family: sans-serif;}
+body{background:#F8F8F8; font-family: sans-serif; padding:20px;}
 div, ul, li {margin:0; padding:0;}
-.container{ margin:0 auto; width:700px; height:500px;}
+.container{ margin:0 auto; width:700px;}
 
 .loginPage {margin-top: 50px}
-.loginPage h1{text-align: center; font-size:13px; text-transform: uppercase;}
+.loginPage h1{text-align: center;
+font-size: 18px;
+text-transform: uppercase;
+margin-bottom: 10px;
+color: #E25041;
+letter-spacing: 5px;}
 
 .logo-wrapper{text-align: center; margin:50px 0;}
 .logo-wrapper .logo-icon{color: #FFF;
@@ -34,3 +39,63 @@ color: #9E9999;}
 .pc-box{background: #FFF; border:1px solid #ececec; padding:30px;}
 
 .loginPage .pc-box.form{width: 60%;margin: 0 auto;}
+.loginPage .pc-box.form p{ text-align: center;}
+.loginPage form{padding: 10px 70px;}
+.loginPage input{text-align: center; margin-bottom:10px;}
+
+input[type=text],input[type=password],input[type=email]{border: none;
+width: 100%;
+height: 39px;
+padding: 0;
+font-size: 32px;
+color: #CCC !important; border-bottom:1px solid #CCC;}
+
+input:focus{border:none; outline:none;}
+input:-webkit-autofill, textarea:-webkit-autofill{background-color:transparent !important;}
+
+.btn{border: none;
+background: #333;
+color: #FFF;
+text-transform: uppercase;
+ padding: 15px 20px; 
+cursor: pointer;
+font-weight: bolder;
+letter-spacing: 1px;
+ }
+ .btn.full-width{width: 100%;
+padding: 18px;}
+
+.red{background:#B8312F;}
+
+.pc-link{color:#333; text-transform: uppercase;
+font-size: 12px;
+text-decoration: underline;}
+
+.pc-msg{width:500px; margin:0 auto; padding:30px; border-radius: 3px;border:1px solid #CCC; text-align: center;}
+
+.pc-msg.error{border-color:red;}
+.pc-msg.success{border-color:rgb(90, 230, 90);}
+
+.indexPage .user-info{text-align: center; font-weight: normal; display: block; margin-bottom:30px;}
+.indexPage .welcome {display: block;
+font-weight: normal;
+font-size: 20px; margin-bottom: 5px;
+}
+.indexPage .create-schedule{margin-bottom: 30px; overflow:hidden;}
+.indexPage .new-schedule{padding:43px 30px; border:1px solid #CCC}
+.indexPage .create-schedule .btn{float:right; margin-top: 20px;}
+.indexPage .create-schedule .btn:hover{background-color:#E25041;}
+
+.indexPage .pc-box{list-style:none; box-shadow: 1px 1px 1px #CCC; overflow: hidden; margin-bottom: 20px; padding:10px 10px 0px 30px}
+.indexPage .pc-box h2{max-width: 550px; color:#5c5c5c;
+float: left;}
+
+.indexPage .pc-box .list-btn{float:right;}
+.indexPage .pc-box .list-btn > * {display: inline-block}
+.addCount .btn{background:#E25041;font-size: 32px;
+padding: 20px 30px;}
+.addCount .btn:hover{background:#B8312F;}
+
+
+.deleteIt .btn{padding: 5px 8px;}
+.deleteIt .btn:hover{background:#222;}
