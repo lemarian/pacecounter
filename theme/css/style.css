@@ -1,0 +1,36 @@
+body{background:#F8F8F8; font-family: sans-serif;}
+div, ul, li {margin:0; padding:0;}
+.container{ margin:0 auto; width:700px; height:500px;}
+
+.loginPage {margin-top: 50px}
+.loginPage h1{text-align: center; font-size:13px; text-transform: uppercase;}
+
+.logo-wrapper{text-align: center; margin:50px 0;}
+.logo-wrapper .logo-icon{color: #FFF;
+background: #E25041;
+display: inline-block;
+padding: 18px 25px 3px 25px;
+font-size: 30px;
+border-bottom: 20px solid #B8312F;
+border-radius: 11px;
+
+}
+.logo-wrapper .logo-text{text-transform: uppercase;
+margin-top: 10px;
+font-weight: bold;
+letter-spacing: 3px;
+color:#E25041;}
+.logo-wrapper .logo-text strong{color:#B8312F;}
+.punch-line{text-align: center;
+margin-bottom: 30px;
+font-family: sans-serif;
+text-transform: uppercase;
+font-size: 13px;
+letter-spacing: 2px;
+color: #9E9999;}
+
+.punch-line strong{color: #555;}
+
+.pc-box{background: #FFF; border:1px solid #ececec; padding:30px;}
+
+.loginPage .pc-box.form{width: 60%;margin: 0 auto;}
